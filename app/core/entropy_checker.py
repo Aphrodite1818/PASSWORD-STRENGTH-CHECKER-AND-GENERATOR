@@ -4,6 +4,11 @@ import math
 import string
 
 
+"""
+    This function calculates the entropy of a password based on the character pool size.
+    It takes a password as input and returns the entropy in bits.
+"""
+
 def calculate_entropy(password):
     pool_size = 0 
     length_pd = len(password)

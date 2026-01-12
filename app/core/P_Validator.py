@@ -1,7 +1,12 @@
 ##--------------------------------THIS SCRIPT IS FOR CHECKING AND VALIDATING PASSWORD FORMAT--------------------------------##
 import string
 
-
+"""
+    This function helps to validate a password based on certain criteria
+    defined below. It checks for length, presence of lowercase letters,
+    uppercase letters, digits, and special characters.
+    you can modify the criteria as needed.
+"""
 
 def Password_Validator(Password):
     feedback = []   #--> empty list to store feedback messages
