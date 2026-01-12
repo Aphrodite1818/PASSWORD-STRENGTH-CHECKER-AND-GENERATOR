@@ -1,6 +1,5 @@
-##--------------------------------THIS SCRIPT IS FOR CHECKING THE ENTROPY OF A PASSWORD--------------------------------##
+##--------------------------------THIS SCRIPT IS FOR CHECKING THE STRENGTH OF THE PASSWORD--------------------------------##
 
-import re
 import math
 import string
 
@@ -35,5 +34,6 @@ def calculate_entropy(password):
     
 
 if __name__ == "__main__":
-    entropy_test=calculate_entropy("correcthorsebatterystaple")  # Example usage
+    Password = input("Enter your password: ")
+    entropy_test=calculate_entropy(Password)  # Example usage
     print(entropy_test)
