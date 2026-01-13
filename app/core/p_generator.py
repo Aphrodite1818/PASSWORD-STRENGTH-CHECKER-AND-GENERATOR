@@ -10,7 +10,7 @@ parent_path = script_path.parents[1]  #this get the parent directory of the curr
 sys.path.append(str(parent_path)) #this appends the parent directory to the system path so that we can import modules from the parent directory
 
 # Now we can import variables from Utils/config.py
-from Utils.config import NUMBERS, SPECIAL_CHARACTERS, LENGTH , SHUFFLE
+from Utils.utils import NUMBERS, SPECIAL_CHARACTERS, LENGTH , SHUFFLE
 
 """
     Generates a random password using configuration from config.py
