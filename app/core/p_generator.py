@@ -5,12 +5,6 @@ from pathlib import Path
 import sys
 
 
-script_path = Path(__file__).resolve() # Get the active path of the current script
-parent_path = script_path.parents[1]  #this get the parent directory of the current script (2 levels up)
-sys.path.append(str(parent_path)) #this appends the parent directory to the system path so that we can import modules from the parent directory
-
-# Now we can import variables from Utils/config.py
-from Utils.utils import NUMBERS, SPECIAL_CHARACTERS, LENGTH , SHUFFLE
 
 """
     Generates a random password using configuration from config.py
@@ -18,7 +12,7 @@ from Utils.utils import NUMBERS, SPECIAL_CHARACTERS, LENGTH , SHUFFLE
     can be modified in Utils/config.py dir
 """
 
-def gen_password():
+def gen_password(NUMBERS,SPECIAL_CHARACTERS,LENGTH,SHUFFLE):
     lowercase_letters = string.ascii_lowercase
     uppercase_letters = string.ascii_uppercase
     digits = string.digits
